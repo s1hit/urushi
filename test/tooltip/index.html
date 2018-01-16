@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tooltip test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link href="../../util/jasmine/jasmine.css" rel="stylesheet">
+	<link href="../../urushi/material/style/material.css" rel="stylesheet">
+	<link href="../test.css" rel="stylesheet">
+	<style type="text/css">
+		.button {
+			margin-left : 180px;
+			margin-top : 8px;
+		}
+	</style>
+
+	<script src="../../util/jasmine/jasmine.js"></script>
+	<script src="../../util/jasmine/jasmine-html.js"></script>
+	<script src="../jasmine-boot.js"></script>
+
+	<script src="../testUtil.js"></script>
+
+	<script src="../../config/requireConfig.js"></script>
+	<script src="../config.js"></script>
+	<script src="../../lib/js/require.js" data-main="./main"></script>
+</head>
+<body>
+	<h1>Tooltip unit test.</h1>
+	<div class="test-area">
+		<button
+			class="button-primary"
+			data-urushi-type="button"
+			data-urushi-addition-type="tooltip"
+			data-urushi-addition-options='{"content" : "tooltip message top.", "position" : "top"}'>Tooltip top</button>
+		<br>
+		<button
+			class="button-primary"
+			data-urushi-type="button"
+			data-urushi-addition-type="tooltip"
+			data-urushi-addition-options='{"content" : "tooltip message right.", "position" : "right"}'>Tooltip right</button>
+		<br>
+		<button
+			class="button-primary"
+			data-urushi-type="button"
+			data-urushi-addition-type="tooltip"
+			data-urushi-addition-options='{"content" : "tooltip message left.", "position" : "left"}'>Tooltip left</button>
+		<br>
+		<button
+			class="button-primary"
+			data-urushi-type="button"
+			data-urushi-addition-type="tooltip"
+			data-urushi-addition-options='{"content" : "tooltip message bottom.", "position" : "bottom"}'>Tooltip bottom</button>
+		<br>
+	</div>
+	<div class="test-area" id="script-modules"></div>
+</body>
+</html>

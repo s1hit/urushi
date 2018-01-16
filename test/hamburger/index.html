@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamburger test</title>
+	<meta charset="utf8">
+
+	<link href="../../util/jasmine/jasmine.css" rel="stylesheet">
+	<link href="../../urushi/material/style/material.css" rel="stylesheet">
+	<link href="../test.css" rel="stylesheet">
+	<style type="text/css">
+		.hamburger {
+			margin : 24px auto;
+		}
+	</style>
+	
+	<script src="../../util/jasmine/jasmine.js"></script>
+	<script src="../../util/jasmine/jasmine-html.js"></script>
+	<script src="../jasmine-boot.js"></script>
+
+	<script src="../testUtil.js"></script>
+
+	<script src="../../config/requireConfig.js"></script>
+	<script src="../config.js"></script>
+	<script src="../../lib/js/require.js" data-main="./main"></script>
+</head>
+<body>
+	<h1>Hamburger unit test.</h1>
+	<span data-urushi-type="hamburger"></span>
+	<div class="test-area" id="script-modules"></div>
+</body>
+</html>
